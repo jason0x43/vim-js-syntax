@@ -9,7 +9,7 @@ runtime! syntax/javascript.vim
 
 syntax case ignore
 
-syntax region jsDocComment      matchgroup=jsComment start="/\*\*\s*"  end="\*/" contains=jsDocTags,jsCommentTodo,jsCvsTag,@jsHtml,@Spell fold
+syntax region jsDocComment      matchgroup=javascriptComment start="/\*\*\s*"  end="\*/" contains=jsDocTags,javascriptCommentTodo,jsCvsTag,@jsHtml,@Spell fold
 
 " tags containing a param
 syntax match  jsDocTags         contained "@\(alias\|augments\|borrows\|class\|constructs\|default\|defaultvalue\|emits\|exception\|exports\|extends\|file\|fires\|kind\|listens\|member\|member[oO]f\|mixes\|module\|name\|namespace\|requires\|throws\|var\|variation\|version\)\>" nextgroup=jsDocParam skipwhite
